@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180.61deg,
+          #000000 25.16%,
+          #04254f 80%,
+          #409ecd 100%);
+  background-size: cover;  
+  padding: 1em 5em;
+  min-width: 100vh;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecalho__logo {
+  display: flex;
+  gap: 1em;
+}
+
+.cabecalho__opcoes {
+  font-size: 1.5vh;
+  display: flex;
+  gap: 1em;
+  padding: 0 1em;
+}
+
+.cabecalho__logo img {
+  width: 300px;
+  height: 100px;
+}
+
+.ficha img {
+  gap: 1em;
+  margin: 0 3em 2em 0;
+}
+
+.ficha-descricao {
+  display: flex;
+}
+
+.ficha-descricao div {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  gap: 3em;
+}
+
+.title{
+  text-align: center;
+  margin: 3rem;
+  font-size: 3vh;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 22px;
+}
+
+.btn-sortear{  
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  background-color: #0077b6;
+  cursor: pointer;
+  font-size: 3vh;
+  line-height: 8vh;
+  text-align: center;
+  transition: .3s;  
+  width: 100%;
+  top: auto;
+}
+
+@media screen and (max-width: 900px) {
+
+  body, .ficha-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+  }
+  .ficha img {
+    width: 300px;    
+  }
+}
